@@ -1,0 +1,24 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+hex2rgb/node_modules
+hex2rgb/.pnp
+hex2rgb/.pnp.js
+
+# testing
+hex2rgb/coverage
+
+# production
+hex2rgb/build
+
+# misc
+hex2rgb/.DS_Store
+hex2rgb/.env.local
+hex2rgb/.env.development.local
+hex2rgb/.env.test.local
+hex2rgb/.env.production.local
+
+hex2rgb/npm-debug.log*
+hex2rgb/yarn-debug.log*
+hex2rgb/yarn-error.log*
+hex2rgb/.idea
