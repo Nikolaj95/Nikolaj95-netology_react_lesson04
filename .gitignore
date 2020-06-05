@@ -22,3 +22,26 @@ hex2rgb/npm-debug.log*
 hex2rgb/yarn-debug.log*
 hex2rgb/yarn-error.log*
 hex2rgb/.idea
+
+# dependencies
+steps/node_modules
+steps/.pnp
+steps/.pnp.js
+
+# testing
+steps/coverage
+
+# production
+steps/build
+
+# misc
+steps/.DS_Store
+steps/.env.local
+steps/.env.development.local
+steps/.env.test.local
+steps/.env.production.local
+
+steps/npm-debug.log*
+steps/yarn-debug.log*
+steps/yarn-error.log*
+steps/.idea
