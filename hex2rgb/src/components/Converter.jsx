@@ -3,7 +3,7 @@ import hexToRgb from "../hexToRgb";
 
 const errorBG = "rgb(169, 27, 27)";
 
-function Converter() {
+export default function Converter() {
     const [hex, setHex] = useState("#");
     const [rgb, setRgb] = useState("");
     const [err, setErr] = useState(false);
@@ -42,6 +42,4 @@ function Converter() {
             />
         </div>
     );
-}
-
-export default Converter;
+};
