@@ -4,8 +4,7 @@ import WalksModel from '../models/WalksModel'
 import {nanoid} from 'nanoid';
 
 export default function AddRecord(props) {
-    const {form, setForm, setWalks} = props
-
+    const {form, setForm, setWalks} = props;
     const handleChange = e => {
         const {name, value} = e.target;
         setForm(prevForm => ({...prevForm, [name]: value}));
@@ -18,7 +17,9 @@ export default function AddRecord(props) {
         setWalks(prevWalks => {
             for (let prevWalk of prevWalks) {
                 if (prevWalk.date === walks.date) {
-                    prevWalk.distance = Number(walks.distance) + Number(prevWalk.distance);
+                    (form.edit)
+                        ? prevWalk.distance = Number(walks.distance)
+                        : prevWalk.distance = Number(walks.distance) + Number(prevWalk.distance);
                     return prevWalks.sort(sortWalks);
                 }
             }

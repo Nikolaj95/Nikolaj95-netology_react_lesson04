@@ -4,7 +4,7 @@ import RecordsListing from './RecordsListing';
 
 export default function WallksRecords() {
     const [walks, setWalks] = useState([]);
-    const [form, setForm] = useState({date: '', distance: ''});
+    const [form, setForm] = useState({date: '', distance: '', edit: false});
 
     return (<>
         <AddRecord form={form} setForm={setForm} setWalks={setWalks}/>

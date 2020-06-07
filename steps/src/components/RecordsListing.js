@@ -12,8 +12,7 @@ export default function RecordsListing(props) {
 
     const handleEdit = id => {
         const walk = walks.find((elem) => elem.id === id);
-        setForm({date: walk.date, distance: walk.distance});
-        handleDelete(id);
+        setForm({date: walk.date, distance: walk.distance, edit: true});
     };
 
     return (
